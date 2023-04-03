@@ -92,7 +92,7 @@ const addBid = async (e) => {
 // GET request -- when page reloads
 useEffect( () => {
   
-      const url = "http://localhost:3001/api/auctionSpace?id=" + productId ;
+      const url = "https://auction-in7z.onrender.com/api/auctionSpace?id=" + productId ;
       const tokenStr = localStorage.getItem("token");
       const headers = { "Authorization": "Bearer "+tokenStr };
       axios
@@ -124,7 +124,7 @@ useEffect( () => {
 // GET request for updating bidding data
 async function getSpace(){
 
-  const url = "http://localhost:3001/api/auctionSpace/onlyAuction?id=" + productId;
+  const url = "https://auction-in7z.onrender.com/api/auctionSpace/onlyAuction?id=" + productId;
       const tokenStr = localStorage.getItem("token");
       const headers = { "Authorization": "Bearer "+tokenStr };
       axios

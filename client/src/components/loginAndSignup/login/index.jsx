@@ -16,7 +16,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = "http://localhost:3001/api/authLogin";
+      const url = "https://auction-in7z.onrender.com/api/authLogin";
       const { data: res } = await axios.post(url, data);
 
       //setting the JWT token on successful login and redirecting to home page

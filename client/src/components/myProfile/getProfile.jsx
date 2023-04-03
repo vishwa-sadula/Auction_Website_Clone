@@ -17,7 +17,7 @@ const GetProfile = () => {
 
   useEffect(() => {
     if(Object.keys(data).length === 0){
-      const url = "http://localhost:3001/api/myProfile";
+      const url = "https://auction-in7z.onrender.com/api/myProfile";
       const tokenStr = localStorage.getItem("token");
       const headers = { "Authorization": "Bearer "+tokenStr };
       axios
