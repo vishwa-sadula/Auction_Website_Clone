@@ -70,7 +70,7 @@ const addBid = async (e) => {
       
   
   //POST method to send bid price entered by the user
-    const res = await fetch("http://localhost:3001/api/auctionSpace" , {
+    const res = await fetch("https://auction-in7z.onrender.com/api/auctionSpace" , {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

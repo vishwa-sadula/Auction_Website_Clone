@@ -27,7 +27,7 @@ const GetSearchResults = () => {
 
     useEffect(() => {
         const fetchdata = async () => {
-            const url = `http://localhost:3001/api/search?name=${name}`;
+            const url = `https://auction-in7z.onrender.com/api/search?name=${name}`;
             const tokenStr = localStorage.getItem("token");
             const headers = { "Authorization": "Bearer "+tokenStr };
             const response = await axios.get(url, { headers });

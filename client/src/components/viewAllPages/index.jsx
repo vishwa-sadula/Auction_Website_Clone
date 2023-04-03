@@ -10,7 +10,7 @@ export default function ViewAll() {
     url=url.substring(1);
     useEffect(() => {
         const fetchdata = async () => {
-        const data = await axios.get("http://localhost:3001/api/"+url);
+        const data = await axios.get("https://auction-in7z.onrender.com/api/"+url);
         setProducts(data);
       };
       fetchdata();

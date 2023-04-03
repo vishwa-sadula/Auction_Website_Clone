@@ -11,7 +11,7 @@ export default function MyChat() {
     let id=(user._id);
     const getBuyerContacts = async () => {
       if(Object.keys(buyerContacts).length === 0){;
-      fetch("http://localhost:3001/api/myChats?id=" + id , {
+      fetch("https://auction-in7z.onrender.com/api/myChats?id=" + id , {
             headers: { "Authorization": "Bearer "+localStorage.getItem("token")}
           })
         .then(response => response.json())
@@ -25,7 +25,7 @@ export default function MyChat() {
   }
   const getSellerContacts = async () => {
     if(Object.keys(sellerContacts).length === 0){
-    fetch("http://localhost:3001/api/myChats/seller?id=" + id , {
+    fetch("https://auction-in7z.onrender.com/api/myChats/seller?id=" + id , {
           headers: { "Authorization": "Bearer "+localStorage.getItem("token")}
         })
       .then(response => response.json())

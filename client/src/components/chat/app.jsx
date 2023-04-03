@@ -39,7 +39,7 @@ function App() {
           [idSeller,idUser]=[idUser,idSeller];
           [username,sellerName]=[sellerName,username]
         }
-      const res = await fetch("http://localhost:3001/api/myChats" , {
+      const res = await fetch("https://auction-in7z.onrender.com/api/myChats" , {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

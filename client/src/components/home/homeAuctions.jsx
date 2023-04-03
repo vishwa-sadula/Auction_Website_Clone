@@ -6,7 +6,7 @@ export default function HomeAuctions({str}) {
     const [products, setProducts] = useState({});
     useEffect(() => {
       const fetchdata = async () => {
-        const data = await axios.get("http://localhost:3001/api/home"+str);
+        const data = await axios.get("https://auction-in7z.onrender.com/api/home"+str);
         setProducts(data);
       };
       fetchdata();

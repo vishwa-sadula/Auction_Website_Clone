@@ -24,7 +24,7 @@ const Card = ({ Product }) => {
     const myHeaders = new Headers({
       Authorization: "Bearer " + localStorage.getItem("token"),
     });
-    const res = await fetch("http://localhost:3001/api/addToWatchList?id=" + id, {
+    const res = await fetch("https://auction-in7z.onrender.com/api/addToWatchList?id=" + id, {
       method: "GET",
       headers: myHeaders,
     });

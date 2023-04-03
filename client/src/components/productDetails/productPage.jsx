@@ -29,7 +29,7 @@ export default function ProductPage(props) {
   const getProducts = async () => {
     // fetching product details from backend server
     const response = await fetch(
-      "http://localhost:3001/api/productDetails?id=" + id
+      "https://auction-in7z.onrender.com/api/productDetails?id=" + id
     );
 
     // storing info in json format
@@ -71,7 +71,7 @@ export default function ProductPage(props) {
 
     // adding the product to the watchList array in the server side by making a GET request
     const res = await fetch(
-      "http://localhost:3001/api/addToWatchList?id=" + id,
+      "https://auction-in7z.onrender.com/api/addToWatchList?id=" + id,
       {
         method: "GET",
         headers: myHeaders,

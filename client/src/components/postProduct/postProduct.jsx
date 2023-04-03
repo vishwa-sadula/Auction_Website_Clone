@@ -94,7 +94,7 @@ const PostProduct = () => {
     alert("Please wait! Your product is getting posted.");
 
     // using post method to post the info to the server side
-    const res = await fetch("http://localhost:3001/api/postProduct", {
+    const res = await fetch("https://auction-in7z.onrender.com/api/postProduct", {
       method: "POST",
       headers: {
         encType: "multipart/form-data",

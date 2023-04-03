@@ -14,7 +14,7 @@ import styled from "styled-components";
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:3001/api/calendarDetails?name=${productName}&date=${date}` )
+        fetch(`https://auction-in7z.onrender.com/api/calendarDetails?name=${productName}&date=${date}` )
           .then(response => response.json())
           .then(data => 
             {

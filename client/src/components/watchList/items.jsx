@@ -26,7 +26,7 @@ const Items = ({
 
     // sending get request to the backend server for removing the item
     const response = await fetch(
-      "http://localhost:3001/api/removeItem?item=" + auction_id,
+      "https://auction-in7z.onrender.com/api/removeItem?item=" + auction_id,
       {
         method: "GET",
         headers: myHeaders,
